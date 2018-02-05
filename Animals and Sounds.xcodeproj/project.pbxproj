@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D850C7872025C6810006FBA3 /* AnimalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D850C7862025C6810006FBA3 /* AnimalCollectionViewCell.swift */; };
+		D87CCB702025CE9900755AAA /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87CCB6F2025CE9900755AAA /* AnimalViewController.swift */; };
 		D8D094AF20248A1D0073C46E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D094AE20248A1D0073C46E /* AppDelegate.swift */; };
-		D8D094B120248A1D0073C46E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D094B020248A1D0073C46E /* ViewController.swift */; };
+		D8D094B120248A1D0073C46E /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D094B020248A1D0073C46E /* CollectionViewController.swift */; };
 		D8D094B420248A1D0073C46E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8D094B220248A1D0073C46E /* Main.storyboard */; };
 		D8D094B620248A1D0073C46E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D094B520248A1D0073C46E /* Assets.xcassets */; };
 		D8D094B920248A1D0073C46E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8D094B720248A1D0073C46E /* LaunchScreen.storyboard */; };
+		D8D094C22025B7F00073C46E /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D094C12025B7F00073C46E /* Animal.swift */; };
+		D8D094C42025B9A60073C46E /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D094C32025B9A60073C46E /* AudioPlayer.swift */; };
+		D8D094C72025B9F70073C46E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D094C62025B9F70073C46E /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D850C7862025C6810006FBA3 /* AnimalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCollectionViewCell.swift; sourceTree = "<group>"; };
+		D87CCB6F2025CE9900755AAA /* AnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
 		D8D094AB20248A1D0073C46E /* Animals and Sounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animals and Sounds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D094AE20248A1D0073C46E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8D094B020248A1D0073C46E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8D094B020248A1D0073C46E /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		D8D094B320248A1D0073C46E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8D094B520248A1D0073C46E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8D094B820248A1D0073C46E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8D094BA20248A1D0073C46E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8D094C12025B7F00073C46E /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		D8D094C32025B9A60073C46E /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AudioPlayer.swift; path = "Animals and Sounds/Helper/AudioPlayer.swift"; sourceTree = SOURCE_ROOT; };
+		D8D094C62025B9F70073C46E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D094C72025B9F70073C46E /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,7 @@
 			children = (
 				D8D094AD20248A1D0073C46E /* Animals and Sounds */,
 				D8D094AC20248A1D0073C46E /* Products */,
+				D8D094C52025B9F60073C46E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +66,58 @@
 		D8D094AD20248A1D0073C46E /* Animals and Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				D8E25FB520285ACC00DE50A5 /* Controller */,
+				D8E25FB420285AC300DE50A5 /* Helper */,
+				D8E25FB320285AAB00DE50A5 /* View */,
+				D8D094C02025B7C10073C46E /* Model */,
 				D8D094AE20248A1D0073C46E /* AppDelegate.swift */,
-				D8D094B020248A1D0073C46E /* ViewController.swift */,
 				D8D094B220248A1D0073C46E /* Main.storyboard */,
 				D8D094B520248A1D0073C46E /* Assets.xcassets */,
 				D8D094B720248A1D0073C46E /* LaunchScreen.storyboard */,
 				D8D094BA20248A1D0073C46E /* Info.plist */,
 			);
 			path = "Animals and Sounds";
+			sourceTree = "<group>";
+		};
+		D8D094C02025B7C10073C46E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8D094C12025B7F00073C46E /* Animal.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D8D094C52025B9F60073C46E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8D094C62025B9F70073C46E /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8E25FB320285AAB00DE50A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D850C7862025C6810006FBA3 /* AnimalCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8E25FB420285AC300DE50A5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D8D094C32025B9A60073C46E /* AudioPlayer.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		D8E25FB520285ACC00DE50A5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D87CCB6F2025CE9900755AAA /* AnimalViewController.swift */,
+				D8D094B020248A1D0073C46E /* CollectionViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +192,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8D094B120248A1D0073C46E /* ViewController.swift in Sources */,
+				D8D094B120248A1D0073C46E /* CollectionViewController.swift in Sources */,
 				D8D094AF20248A1D0073C46E /* AppDelegate.swift in Sources */,
+				D8D094C22025B7F00073C46E /* Animal.swift in Sources */,
+				D8D094C42025B9A60073C46E /* AudioPlayer.swift in Sources */,
+				D87CCB702025CE9900755AAA /* AnimalViewController.swift in Sources */,
+				D850C7872025C6810006FBA3 /* AnimalCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,11 +337,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 32325SM62E;
 				INFOPLIST_FILE = "Animals and Sounds/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "dk.epsoftware.animalsandsounds.Animals-and-Sounds";
+				PRODUCT_BUNDLE_IDENTIFIER = dk.epsoftware.animalsandsounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -292,11 +353,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 32325SM62E;
 				INFOPLIST_FILE = "Animals and Sounds/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "dk.epsoftware.animalsandsounds.Animals-and-Sounds";
+				PRODUCT_BUNDLE_IDENTIFIER = dk.epsoftware.animalsandsounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
